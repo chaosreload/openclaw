@@ -300,7 +300,7 @@ describe("applyPluginAutoEnable", () => {
       };
       const result = applyPluginAutoEnable({
         config: {
-          channels: { feishu: { appId: "cli_xxx", appSecret: "xxx" } },
+          channels: { feishu: { appId: "cli_xxx", appSecret: "xxx" } }, // pragma: allowlist secret
         },
         env: {},
         manifestRegistry: bundledRegistry,
